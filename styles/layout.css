@@ -1,0 +1,138 @@
+/* layout.css */
+
+/* General page structure */
+main {
+    display: flex;
+    flex-direction: column; /* Stack everything vertically */
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #009688;
+    color: rgb(113, 155, 189);
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* put fish in the correct grid order */
+
+.fish-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.holy-fish { 
+    grid-row: 1; 
+    border: 3px solid gold;
+}
+.soldier-fish {
+    grid-row: 2; 
+    border: 3px solid red;
+}
+.regular-fish { 
+    grid-row: 3; 
+    border: 3px solid blue;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Layout for fish and tips side-by-side */
+#topSection {
+    display: flex;
+    justify-content: space-between; /* Ensures space between the sections */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limit the width */
+    margin-bottom: 40px; /* Space between the top and bottom sections */
+}
+
+/* Fish list section */
+#fishList {
+    flex: 7; /* 70% of the width */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+/* Tip list section */
+#tipList {
+    flex: 3; /* 30% of the width */
+    background-color: #f9f9f9; /* Optional background color for contrast */
+}
+
+/* Locations list section */
+#locationList {
+    display: flex;
+    flex-wrap: wrap;  /* Allows items to wrap onto the next line */
+    gap: 20px;        /* Adds space between each location */
+    justify-content: flex-start;  /* Align items to the start (left) */
+    width: 100%;
+    max-width: 1200px;  /* Limit the width of the container */
+    margin-top: 20px;
+}
+
+/* Fish card styling */
+.fish-card {
+    width: 180px; /* Set a fixed width for consistency */
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(79, 25, 110, 0.1);
+    text-align: center;
+}
+
+.fish-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.fish-card h2 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.fish-card p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+/* Tips section styling */
+.tips {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tip {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+/* Location list styling */
+.location {
+    width: 180px;      /* Fixed width for each location card */
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;  /* Adds some space below each card */
+}
+
+.location h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+}

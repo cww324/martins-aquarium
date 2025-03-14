@@ -1,0 +1,53 @@
+<script type="module">
+    import { locationList } from './scripts/locationList.js'
+    document.getElementById('locationList').innerHTML = locationList()
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Martin's Aquarium</title>
+   <link rel="stylesheet" href="./styles/main.css">
+   <link rel="stylesheet" href="./styles/layout.css">
+</head>
+<body>
+   <header>
+       <h1>Martin's Aquarium</h1>
+   </header>
+
+   <main>
+       <!-- Wrap fish and tips sections inside a topSection container -->
+       <section id="topSection">
+        <div class="fish-container">
+
+            
+        </div>
+
+        <section id="holyFishList">
+
+            </section>
+            <section id="soldierFishList">
+
+            </section>
+            <section id="regularFishList">
+
+            </section>
+           <section id="fishList">
+               <!-- Fish grid will be dynamically generated here -->
+           </section>
+
+           <aside id="tipList">
+               <!-- Care tips will be dynamically generated here -->
+           </aside>
+       </section>
+
+       <section id="locationList">
+           <!-- Location grid will be dynamically generated here -->
+       </section>
+   </main>
+
+   <script src="./scripts/main.js" type="module"></script>
+</body>
+</html>
